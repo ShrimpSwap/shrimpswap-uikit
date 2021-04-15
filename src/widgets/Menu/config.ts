@@ -145,7 +145,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/shrimpswapfinance",
+        href: "https://t.me/shrimpyswap",
       },
     ],
   },
