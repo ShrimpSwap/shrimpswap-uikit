@@ -144,15 +144,19 @@ export const socials = [
     icon: "TelegramIcon",
     items: [
       {
-        label: "English",
-        href: "https://t.me/shrimpyswap",
+        label: "Chat",
+        href: "https://t.me/ShrimpSwapChat",
+      },
+      {
+        label: "Announcements",
+        href: "https://t.me/ShrimpSwapAnn",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/shrimpswap",
+    href: "https://twitter.com/ShrimpSwap",
   },
 ];
 
