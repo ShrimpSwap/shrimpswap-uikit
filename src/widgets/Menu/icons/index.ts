@@ -19,6 +19,7 @@ export { default as MediumIcon } from "./Medium";
 export { default as MoonIcon } from "./Moon";
 export { default as MoreIcon } from "./More";
 export { default as NftIcon } from "./Nft";
+export { default as RoadmapIcon } from "./Roadmap";
 export { default as PoolIcon } from "./Pool";
 export { default as WaveIcon } from "./Wave";
 export { default as SunIcon } from "./Sun";
