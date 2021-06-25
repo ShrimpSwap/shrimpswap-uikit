@@ -28,16 +28,18 @@ it("renders correctly", () => {
     <BrowserRouter>
       <Menu
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
-        login={noop}
-        logout={noop}
-        isDark={false}
-        toggleTheme={noop}
-        langs={langs}
-        setLang={noop}
-        currentLang="EN"
         cakePriceUsd={0.23158668932877668}
+        currentLang="EN"
+        isDark={false}
+        langs={langs}
         links={menuConfig}
         priceLink="TODO"
+        whalePriceLink="TODO"
+        whalePriceUsd={1.23158668932877668}
+        login={noop}
+        logout={noop}
+        setLang={noop}
+        toggleTheme={noop}
       >
         body
       </Menu>
@@ -183,7 +185,7 @@ it("renders correctly", () => {
               class="sc-jrAGrp gTTHkW"
             >
               <div
-                class="sc-iBPRYJ cLpriL"
+                class="sc-iBPRYJ xSskq"
                 role="button"
               >
                 <a
@@ -213,7 +215,7 @@ it("renders correctly", () => {
                 class="sc-fubCfw ieMlxO"
               >
                 <div
-                  class="sc-iBPRYJ hoQguK"
+                  class="sc-iBPRYJ cePbdT"
                   role="button"
                 >
                   <svg
@@ -251,7 +253,7 @@ it("renders correctly", () => {
                 />
               </div>
               <div
-                class="sc-iBPRYJ hoQguK"
+                class="sc-iBPRYJ cePbdT"
                 role="button"
               >
                 <a
@@ -289,7 +291,7 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="sc-iBPRYJ hoQguK"
+                class="sc-iBPRYJ cePbdT"
                 role="button"
               >
                 <a
@@ -319,7 +321,7 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="sc-iBPRYJ hoQguK"
+                class="sc-iBPRYJ cePbdT"
                 role="button"
               >
                 <a
@@ -354,7 +356,7 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="sc-iBPRYJ hoQguK"
+                class="sc-iBPRYJ cePbdT"
                 role="button"
               >
                 <a
@@ -386,7 +388,7 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="sc-iBPRYJ hoQguK"
+                class="sc-iBPRYJ cePbdT"
                 role="button"
               >
                 <a
@@ -426,7 +428,7 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="sc-iBPRYJ hoQguK"
+                class="sc-iBPRYJ cePbdT"
                 role="button"
               >
                 <a
@@ -451,7 +453,7 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="sc-iBPRYJ hoQguK"
+                class="sc-iBPRYJ cePbdT"
                 role="button"
               >
                 <a
@@ -538,7 +540,7 @@ it("renders correctly", () => {
                 </a>
               </div>
               <div
-                class="sc-iBPRYJ hoQguK"
+                class="sc-iBPRYJ cePbdT"
                 role="button"
               >
                 <a
@@ -566,7 +568,7 @@ it("renders correctly", () => {
                 class="sc-fubCfw ieMlxO"
               >
                 <div
-                  class="sc-iBPRYJ hoQguK rainbow"
+                  class="sc-iBPRYJ cePbdT rainbow"
                   role="button"
                 >
                   <svg
@@ -598,14 +600,14 @@ it("renders correctly", () => {
                   </svg>
                 </div>
                 <div
-                  class="sc-pFZIQ kcVQrf"
+                  class="sc-pFZIQ fueaau"
                 />
               </div>
               <div
                 class="sc-fubCfw ieMlxO"
               >
                 <div
-                  class="sc-iBPRYJ hoQguK"
+                  class="sc-iBPRYJ cePbdT"
                   role="button"
                 >
                   <svg
@@ -649,7 +651,7 @@ it("renders correctly", () => {
                 class="sc-fubCfw ieMlxO"
               >
                 <div
-                  class="sc-iBPRYJ hoQguK"
+                  class="sc-iBPRYJ cePbdT"
                   role="button"
                 >
                   <svg
@@ -812,7 +814,7 @@ it("renders correctly", () => {
                 class="sc-fubCfw ieMlxO"
               >
                 <div
-                  class="sc-iBPRYJ hoQguK"
+                  class="sc-iBPRYJ cePbdT"
                   role="button"
                 >
                   <svg

@@ -35,7 +35,7 @@ const PriceLink = styled.a`
   }
 `;
 
-const SocialEntry = styled.div`
+const Row = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,20 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
-const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, priceLink }) => {
+const Emoji = (props: { symbol: string }) => (
+  <span style={{ width: 24, textAlign: "center", marginRight: 8 }} role="img">
+    {props.symbol}
+  </span>
+);
+
+const PanelFooter: React.FC<Props> = ({
+  isPushed,
+  pushNav,
+  cakePriceUsd,
+  priceLink,
+  whalePriceUsd,
+  whalePriceLink,
+}) => {
   if (!isPushed) {
     return (
       <Container>
@@ -56,7 +69,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, priceLi
 
   return (
     <Container>
-      <SocialEntry>
+      <Row>
         {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <LogoIcon width="24px" mr="8px" />
@@ -88,7 +101,17 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, cakePriceUsd, priceLi
             );
           })}
         </Flex>
-      </SocialEntry>
+      </Row>
+      <Row>
+        {whalePriceUsd ? (
+          <PriceLink href={whalePriceLink} target="_blank">
+            <Emoji symbol="🐳" />
+            <Text color="textSubtle" bold>{`$${whalePriceUsd.toFixed(3)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
+      </Row>
     </Container>
   );
 };

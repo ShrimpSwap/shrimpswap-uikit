@@ -62,18 +62,20 @@ const MobileOnlyOverlay = styled(Overlay)`
 
 const Menu: React.FC<NavProps> = ({
   account,
-  login,
-  logout,
-  isDark,
-  toggleTheme,
-  langs,
-  setLang,
-  currentLang,
   cakePriceUsd,
+  children,
+  currentLang,
+  isDark,
+  langs,
   links,
   priceLink,
   profile,
-  children,
+  whalePriceLink,
+  whalePriceUsd,
+  login,
+  logout,
+  setLang,
+  toggleTheme,
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -128,18 +130,20 @@ const Menu: React.FC<NavProps> = ({
       </StyledNav>
       <BodyWrapper>
         <Panel
-          isPushed={isPushed}
-          isMobile={isMobile}
-          showMenu={showMenu}
-          isDark={isDark}
-          toggleTheme={toggleTheme}
-          langs={langs}
-          setLang={setLang}
-          currentLang={currentLang}
           cakePriceUsd={cakePriceUsd}
-          pushNav={setIsPushed}
+          currentLang={currentLang}
+          isDark={isDark}
+          isMobile={isMobile}
+          isPushed={isPushed}
+          langs={langs}
           links={links}
           priceLink={priceLink}
+          showMenu={showMenu}
+          whalePriceLink={whalePriceLink}
+          whalePriceUsd={whalePriceUsd}
+          pushNav={setIsPushed}
+          setLang={setLang}
+          toggleTheme={toggleTheme}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}

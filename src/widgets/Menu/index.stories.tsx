@@ -32,6 +32,8 @@ export const Connected: React.FC = () => (
       cakePriceUsd={0.23158668932877668}
       links={links}
       profile={null}
+      whalePriceLink="bar"
+      whalePriceUsd={1.23158668932877668}
     >
       <div>
         <Heading as="h1" mb="8px">
@@ -68,6 +70,8 @@ export const NotConnected: React.FC = () => (
       priceLink="foo"
       currentLang="EN"
       links={links}
+      whalePriceLink="bar"
+      whalePriceUsd={1.23158668932877668}
     >
       <div>
         <h1>Page body</h1>
@@ -98,6 +102,8 @@ export const WithNoProfile: React.FC = () => (
       priceLink="foo"
       currentLang="EN"
       cakePriceUsd={0.23158668932877668}
+      whalePriceLink="bar"
+      whalePriceUsd={1.23158668932877668}
       links={links}
       profile={{
         profileLink: "/profile",
@@ -139,6 +145,8 @@ export const WithProfile: React.FC = () => (
       setLang={noop}
       currentLang="EN"
       cakePriceUsd={0.23158668932877668}
+      whalePriceLink="bar"
+      whalePriceUsd={1.23158668932877668}
       links={links}
       profile={{
         username: "shrimpswap",
