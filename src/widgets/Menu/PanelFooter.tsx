@@ -43,6 +43,14 @@ const Row = styled.div`
   padding: 0 16px;
 `;
 
+const SocialRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  padding: 0 16px;
+`;
+
 const Emoji = (props: { symbol: string }) => (
   <span style={{ width: 24, textAlign: "center", marginRight: 8 }} role="img">
     {props.symbol}
@@ -102,7 +110,7 @@ const PanelFooter: React.FC<Props> = ({
           })}
         </Flex>
       </Row>
-      <Row>
+      <SocialRow>
         {whalePriceUsd ? (
           <PriceLink href={whalePriceLink} target="_blank">
             <Emoji symbol="🐳" />
@@ -111,7 +119,7 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
-      </Row>
+      </SocialRow>
     </Container>
   );
 };
